@@ -9,8 +9,8 @@ const ContentsHeader = ({ title, sortButton, ButtonIs, ButtonName, selectMenuIs,
     };
     return (
         <>
-            <Box component={'div'} className="flex justify-between">
-                <Typography variant="h5" className="[&&]:leading-9">
+            <Box component={'div'} className="flex justify-between p-3">
+                <Typography variant="h5" className="[&&]:leading-10">
                     {title}
                 </Typography>
                 <Box component={'div'} className="flex items-center">
@@ -40,7 +40,7 @@ const ContentsHeader = ({ title, sortButton, ButtonIs, ButtonName, selectMenuIs,
                         ''
                     )}
                     {ButtonIs === true ? (
-                        <Button variant="contained" className="[&&]:ml-2">
+                        <Button variant="contained" className="ml-2 ">
                             {ButtonName}
                         </Button>
                     ) : (
@@ -48,7 +48,7 @@ const ContentsHeader = ({ title, sortButton, ButtonIs, ButtonName, selectMenuIs,
                     )}
                 </Box>
             </Box>
-            <Divider className="[&&]:mt-2" />
+            <Divider />
         </>
     );
 };

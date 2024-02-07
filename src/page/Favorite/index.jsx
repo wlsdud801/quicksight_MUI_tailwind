@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import React from 'react';
-import ContentsHeader from '../components/Layout/ContentsHeader';
+import ContentsHeader from '../../components/Layout/ContentsHeader';
 import { Star } from '@mui/icons-material';
 
 const Favorite = () => {

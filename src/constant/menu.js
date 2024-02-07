@@ -9,17 +9,16 @@ import {
     Share,
     Star,
 } from '@mui/icons-material';
-import { Divider } from '@mui/material';
 
 export const NAV_MENU_TOP = [
-    { icon: <Star />, label: 'Favorite' },
-    { icon: <PunchClock />, label: 'Recent' },
-    { icon: <Folder />, label: 'My Folders' },
-    { icon: <Share />, label: 'Shared Folders' },
+    { icon: <Star />, label: 'Favorite', link: '' },
+    { icon: <PunchClock />, label: 'Recent', link: 'Recent' },
+    { icon: <Folder />, label: 'My folders', link: 'Myfolders' },
+    { icon: <Share />, label: 'Shared folders', link: 'Sharedfolders' },
 ];
 export const NAV_MENU_BOTTOM = [
-    { icon: <Dashboard />, label: 'Dashboards' },
-    { icon: <Analytics />, label: 'Analysis' },
-    { icon: <Dataset />, label: 'Datasets' },
-    { icon: <ChatBubble />, label: 'Community' },
+    { icon: <Dashboard />, label: 'Dashboards', link: 'Dashboards' },
+    { icon: <Analytics />, label: 'Analysis', link: 'Analysis' },
+    { icon: <Dataset />, label: 'Datasets', link: 'Datasets' },
+    { icon: <ChatBubble />, label: 'Community', link: 'Community' },
 ];

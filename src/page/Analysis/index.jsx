@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import ContentsHeader from '../components/Layout/ContentsHeader';
-import { ANALYSIS_SORT_POINT } from '../constant/analysisSortPoint';
+import ContentsHeader from '../../components/Layout/ContentsHeader';
+import { ANALYSIS_SORT_POINT } from '../../constant/analysisSortPoint';
 
 const Analysis = () => {
     return (

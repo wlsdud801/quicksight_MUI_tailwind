@@ -1,44 +1,46 @@
 import React from 'react';
 import './App.css';
-import { Box, CssBaseline } from '@mui/material';
-import PersonIcon from '@mui/icons-material/Person';
-import HelpIcon from '@mui/icons-material/Help';
 import SideNav from './components/Layout/SideNav';
 import Header from './components/Layout/Header';
-import { useRecoilState } from 'recoil';
-import { navState } from './recoil/nav';
-import Datasets from './page/Datasets';
+import Datasets from './page/Dataset';
 import Analysis from './page/Analysis';
-import Community from './page/Community';
 import Dashboard from './page/Dashboard';
 import Favorite from './page/Favorite';
 import MyFolders from './page/MyFolders';
 import Recent from './page/Recent';
 import SharedFolders from './page/SharedFolders';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import DashboardDetail from './page/Dashboard/DashboardDetail';
+import '/node_modules/react-grid-layout/css/styles.css';
+import '/node_modules/react-resizable/css/styles.css';
+import GlobalStyles from './styles/Globalstyles';
 
 function App() {
-    const [open, setOpen] = React.useState(true);
+    const location = useLocation();
 
-    const [nav, setNav] = useRecoilState(navState);
-    const selectMenu = {
-        Analysis: <Analysis />,
-        Community: <Community />,
-        Dashboards: <Dashboard />,
-        Datasets: <Datasets />,
-        Favorite: <Favorite />,
-        'My Folders': <MyFolders />,
-        'Shared Folders': <SharedFolders />,
-        Recent: <Recent />,
-    };
     return (
         <>
-            <CssBaseline />
-            <Header />
-            <div style={{ display: 'flex' }}>
-                <SideNav />
-                <Box p={2} sx={{ width: '100%' }}>
-                    {nav && selectMenu[nav]}
-                </Box>
+            <GlobalStyles />
+            <div className="flex flex-col h-screen">
+                <Header />
+                <div className="flex-1 flex overflow-hidden">
+                    {location.pathname === '/Dashboard' ||
+                    location.pathname === '/Dashboards/DashboardDetail' ? null : (
+                        <SideNav />
+                    )}
+                    <main className="flex-1 ">
+                        <Routes>
+                            <Route path="/" element={<Favorite />}></Route>
+                            <Route path="Recent" element={<Recent />}></Route>
+                            <Route path="Myfolders" element={<MyFolders />}></Route>
+                            <Route path="Sharedfolders" element={<SharedFolders />}></Route>
+                            <Route path="Dashboards" element={<Dashboard />}></Route>
+                            <Route path="Dashboards/DashboardDetail" element={<DashboardDetail />}></Route>
+                            <Route path="Analysis" element={<Analysis />}></Route>
+                            <Route path="Datasets" element={<Datasets />}></Route>
+                        </Routes>
+                    </main>
+                </div>
             </div>
         </>
     );
