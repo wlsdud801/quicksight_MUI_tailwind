@@ -10,7 +10,7 @@ const Favorite = () => {
             <Box className="text-center [&&]:mt-9">
                 <Star />
                 <Typography variant="h6">No favorites</Typography>
-                <Typography variant="p">고양이 Favorite items want easliy find later</Typography>
+                <Typography variant="p">강아지 Favorite items want easliy find later</Typography>
             </Box>
         </Box>
     );
