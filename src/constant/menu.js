@@ -1,14 +1,4 @@
-import {
-    Analytics,
-    ArrowRight,
-    ChatBubble,
-    Dashboard,
-    Dataset,
-    Folder,
-    PunchClock,
-    Share,
-    Star,
-} from '@mui/icons-material';
+import { Analytics, ChatBubble, Dashboard, Dataset, Folder, PunchClock, Share, Star } from '@mui/icons-material';
 
 export const NAV_MENU_TOP = [
     { icon: <Star />, label: 'Favorite', link: '' },

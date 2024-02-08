@@ -1,16 +1,12 @@
+/* eslint-disable no-unused-vars */
 import { AppBar, Box, Divider, IconButton, Link, Menu, MenuItem, Toolbar, Typography } from '@mui/material';
 import HelpIcon from '@mui/icons-material/Help';
-import PersonIcon from '@mui/icons-material/Person';
 import React from 'react';
 import { AccountCircle } from '@mui/icons-material';
 
 const Header = () => {
     const [auth, setAuth] = React.useState(true);
     const [anchorEl, setAnchorEl] = React.useState(null);
-
-    const handleChange = (event) => {
-        setAuth(event.target.checked);
-    };
 
     const handleMenu = (event) => {
         setAnchorEl(event.currentTarget);

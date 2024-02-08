@@ -1,11 +1,10 @@
 import { Close, CloudDone } from '@mui/icons-material';
 import { Box, IconButton, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import React from 'react';
 import { useRecoilState } from 'recoil';
 import { sideToolbarState } from '../../../../recoil/sideToolbar';
 
 const SideToolBar_Data = ({ title, children }) => {
-    const [open, setOpen] = useState(true);
     const [activeMenu, setActiveMenu] = useRecoilState(sideToolbarState);
     const closeHandler = () => {
         setActiveMenu(null);
@@ -19,7 +18,7 @@ const SideToolBar_Data = ({ title, children }) => {
                 minWidth: activeMenu !== null ? '18rem' : '0',
             }}
         >
-            <div className={`flex justify-between items-center ${open ? 'block' : 'hidden'}`}>
+            <div className={`flex justify-between items-center `}>
                 <Typography variant="h6">
                     <CloudDone className="mr-1 translate-y-1" />
                     {title}

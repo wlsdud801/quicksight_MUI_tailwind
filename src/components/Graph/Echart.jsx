@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import * as echarts from 'echarts';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import ECharts from 'echarts-for-react';
 
 const Echart = () => {

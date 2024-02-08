@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { Chart, LineAdvance } from 'bizcharts';
 
 // 数据源

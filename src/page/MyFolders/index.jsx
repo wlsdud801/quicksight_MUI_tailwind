@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import ContentsHeader from '../../components/Layout/ContentsHeader';
 import React from 'react';
-import myFolder from '../../assets/img/folder.svg';
 
 const MyFolders = () => {
     return (

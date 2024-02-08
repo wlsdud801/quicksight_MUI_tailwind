@@ -1,6 +1,6 @@
+/* eslint-disable react/jsx-pascal-case */
 import { Box, Button, Divider, IconButton, List, ListItem, Tab, Tooltip } from '@mui/material';
 import React, { useRef, useState } from 'react';
-import DragnDropList from '../../../components/DragnDrop/DragnDropList';
 import DragnDropGrid from '../../../components/DragnDrop/DragnDropGrid';
 import SideToolBar from './components/SideToolBar';
 import { DASHBOARD_MENU } from '../../../constant/dashboardMenu';

@@ -4,7 +4,6 @@ import { data } from '../Graph/data';
 import BarChart from '../Graph/D3';
 import ApexChart from '../Graph/Apexchart';
 import Chartjs from '../Graph/Chartjs';
-import Bizchart from '../Graph/Bizchart';
 import Echart from '../Graph/Echart';
 import Highchart from '../Graph/Highchart';
 
