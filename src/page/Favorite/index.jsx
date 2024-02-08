@@ -9,8 +9,8 @@ const Favorite = () => {
             <ContentsHeader title="Favorite" sortButton={true} ButtonIs={true} ButtonName="add Favorite" />
             <Box className="text-center [&&]:mt-9">
                 <Star />
-                <Typography variant="h6">No favorites</Typography>
-                <Typography variant="p">사슴 Favorite items want easliy find later</Typography>
+                <Typography variant="h6">No favorites🔵</Typography>
+                <Typography variant="p">Favorite items want easliy find later</Typography>
             </Box>
         </Box>
     );
